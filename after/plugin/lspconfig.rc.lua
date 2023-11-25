@@ -36,11 +36,6 @@ lspconfig.lua_ls.setup {
 
 lspconfig.clangd.setup {
 	on_attach = on_attach,
-<<<<<<< HEAD
-	filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
-	cmd = { "clangd" },
-=======
 	filetypes = { "c", "cpp" },
 	cmd = { "clangd" }
->>>>>>> becf857 (re-Config LSPSaga)
 }
