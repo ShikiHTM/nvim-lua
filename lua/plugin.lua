@@ -9,6 +9,7 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
 	-- Plugin Manager
+<<<<<<< HEAD
 	use 'https://github.com/wbthomason/packer.nvim'
 
 	-- Utils
@@ -35,6 +36,35 @@ packer.startup(function(use)
 	-- Code highlight
 	use {
 		'https://github.com/nvim-treesitter/nvim-treesitter',
+=======
+	use 'wbthomason/packer.nvim'
+
+	-- Utils
+	use 'jiangmiao/auto-pairs'
+	use 'nvim-tree/nvim-web-devicons'
+
+	-- Status Line
+	use 'nvim-lualine/lualine.nvim'
+
+	-- BufferTab
+	use 'akinsho/bufferline.nvim'
+
+	-- Theme
+	use 'ellisonleao/gruvbox.nvim'
+
+	-- LSP
+	use 'L3MON4D3/LuaSnip'
+	use 'neovim/nvim-lspconfig'
+	use 'hrsh7th/nvim-cmp'
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-buffer'
+	use 'onsails/lspkind.nvim'
+	use 'nvimdev/lspsaga.nvim'
+
+	-- Code highlight
+	use {
+		'nvim-treesitter/nvim-treesitter',
+>>>>>>> becf857 (re-Config LSPSaga)
 		run = function()
 			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 			ts_update()
@@ -43,6 +73,7 @@ packer.startup(function(use)
 
 	-- File Manager
 	use {
+<<<<<<< HEAD
 		'https://github.com/nvim-telescope/telescope.nvim',
 		requires = { { 'nvim-lua/plenary.nvim' } }
 	}
@@ -51,3 +82,10 @@ end)
 
 -- Theme Settings
 vim.cmd [[colorscheme gruvbox]]
+=======
+		'nvim-telescope/telescope.nvim',
+		requires = { { 'nvim-lua/plenary.nvim' } }
+	}
+	use 'nvim-telescope/telescope-file-browser.nvim'
+end)
+>>>>>>> becf857 (re-Config LSPSaga)

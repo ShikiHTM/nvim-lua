@@ -13,9 +13,18 @@ vim.opt.smarttab = true
 vim.opt.autoindent = true
 vim.opt.shiftwidth = 4
 
+<<<<<<< HEAD
 vim.opt.shell = 'fish'
+=======
+vim.opt.shell = 'PowerShell'
+>>>>>>> becf857 (re-Config LSPSaga)
 
 vim.api.nvim_create_autocmd("InsertLeave", {
 	pattern = '*',
 	command = "set nopaste"
 })
+<<<<<<< HEAD
+=======
+
+vim.cmd [[autocmd BufNewFile, BufRead * setLocal formatoptions+=cqn]]
+>>>>>>> becf857 (re-Config LSPSaga)

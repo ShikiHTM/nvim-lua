@@ -17,5 +17,12 @@ if is_windows then
 	require('windows')
 end
 
+<<<<<<< HEAD
 -- Turn off auto comment
 vim.cmd [[autocmd Filetype * set formatoptions-=ro]]
+=======
+vim.api.nvim_get_runtime_file("after/plugin/*.lua", true)
+
+-- Turn off auto comment
+vim.cmd [[autocmd Filetype * set formatoptions-=cro]]
+>>>>>>> becf857 (re-Config LSPSaga)

@@ -49,8 +49,13 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
+<<<<<<< HEAD
 local package_path_str = "/Users/shikihytm/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/shikihytm/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/shikihytm/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/shikihytm/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
 local install_cpath_pattern = "/Users/shikihytm/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+=======
+local package_path_str = "C:\\Users\\Shiki\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\share\\lua\\5.1\\?.lua;C:\\Users\\Shiki\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\Shiki\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\Shiki\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\Shiki\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\lua\\5.1\\?.so"
+>>>>>>> becf857 (re-Config LSPSaga)
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,77 +81,143 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/LuaSnip",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["auto-pairs"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind.nvim",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/onsails/lspkind.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/packer.nvim",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
+<<<<<<< HEAD
     path = "/Users/shikihytm/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+=======
+    path = "C:\\Users\\Shiki\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
+>>>>>>> becf857 (re-Config LSPSaga)
     url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
