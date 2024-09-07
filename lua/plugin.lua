@@ -38,6 +38,14 @@ packer.startup(function(use)
 		'nvim-treesitter/nvim-treesitter',
 		requires = { { 'nvim-lua/plenary.nvim' } }
 	}
-	use 'nvim-telescope/telescope.nvim'
-	use 'nvim-telescope/telescope-file-browser.nvim'
+	use 'https://github.com/nvim-telescope/telescope-file-browser.nvim'
+
+	-- Code Commentary
+	use 'tpope/vim-commentary'
+
+	-- HTML Emmet
+	use 'mattn/emmet-vim'
+	
+	-- Live Server
+	use 'https://github.com/barrett-ruth/live-server.nvim'
 end)
